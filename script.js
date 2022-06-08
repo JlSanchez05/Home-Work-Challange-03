@@ -7,7 +7,7 @@ var confirmUpper
 var confirmNumber
 var confirmSpecial
 var userChoices
-var lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+const lowerCase = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 // Upper Case array
 var blankUpper = []
 var toUpper = function (x){
@@ -73,7 +73,7 @@ function generatePassword() {
     userChoices = numbers.concat(special)
     console.log(userChoices)
   }
-  // 1 true option
+  // if user only picks one option
   else if(confirmLower){
     userChoices = lowerCase
     console.log(userChoices)
